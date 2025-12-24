@@ -15,7 +15,7 @@ window.openEditorPopup = function() {
         height: 550,
         layout: {
             type: 'vbox',
-            align: 'stretch' // Ensures children stretch to full width
+            align: 'stretch'
         },
         bodyPadding: 10,
         closeAction: 'destroy',
