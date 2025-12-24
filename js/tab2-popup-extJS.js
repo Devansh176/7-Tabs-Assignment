@@ -11,7 +11,7 @@ window.openEditorPopup = function() {
     Ext.create('Ext.window.Window', {
         title: 'Patient Details',
         modal: true,
-        width: 700,
+        width: 800,
         height: 550,
         layout: {
             type: 'vbox',

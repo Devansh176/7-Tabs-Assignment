@@ -5,21 +5,30 @@ Ext.onReady(function () {
         data: [
             { "name": "STATIC VALUE 1" },
             { "name": "STATIC VALUE 2" },
-            { "name": "STATIC VALUE 3" }
+            { "name": "STATIC VALUE 3" },
+            { "name": "DEPARTMENT A" },
+            { "name": "DEPARTMENT B" },
+            { "name": "DEPARTMENT C" },
         ]
     });
 
     // Create the ComboBox
     Ext.create('Ext.form.field.ComboBox', {
-        renderTo: 'extDropdown', // Renders into the <div id="extDropdown">
+        renderTo: 'extDropdown',
         width: 180,
         store: staticStore,
         queryMode: 'local',
         displayField: 'name',
         valueField: 'name',
-        emptyText: 'STATIC VALUE',
-        editable: false,
-        
+
+        //Search feature
+        emptyText: 'Type to search...',
+        editable: true,
+        typeAhead: true,
+        typeAheadDelay: 100,
+        minChars: 1,
+        forceSelection: true,
+
         // Force the component to be visible immediately
         style: {
             display: 'inline-block',
