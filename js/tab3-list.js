@@ -72,13 +72,39 @@ window.initTab3 = function() {
                 {
                     xtype: 'textfield', 
                     emptyText: 'Search Code...',
-                    width: 150,
+                    width: 100,
                     enableKeyEvents: true,
                     listeners: {
                         keyup: function(field) {
                             var val = field.getValue();
                             dataStore.clearFilter();
                             if(val) dataStore.filter('code', val, true, false);
+                        }
+                    }
+                },
+                {
+                    xtype: 'textfield', 
+                    emptyText: 'Department',
+                    width: 200,
+                    enableKeyEvents: true,
+                    listeners: {
+                        keyup: function(field) {
+                            var val = field.getValue();
+                            dataStore.clearFilter();
+                            if(val) dataStore.filter('department', val, true, false);
+                        }
+                    }
+                },
+                {
+                    xtype: 'textfield', 
+                    emptyText: 'Status',
+                    width: 100,
+                    enableKeyEvents: true,
+                    listeners: {
+                        keyup: function(field) {
+                            var val = field.getValue();
+                            dataStore.clearFilter();
+                            if(val) dataStore.filter('status', val, true, false);
                         }
                     }
                 },
