@@ -37,14 +37,14 @@ window.openEditorPopup = function() {
                         xtype: 'component',
                         flex: 1,
                         html: '<div style="line-height:1.8; font-family:Arial; font-size:12px;">' +
-                              '<b>Name</b> : MAN<br>' +
-                              '<b>MRN</b> : <br>' +
-                              '<b>Date Of Birth</b> : <br>' +
-                              '<b>Age</b> : <br>' +
-                              '<b>Gender</b> : <br>' +
-                              '<b>Address</b> : <br>' +
-                              '<b>Reg Date</b> : <br>' +
-                              '<b>Status</b> : ' +
+                              '<b>Name</b> : Devansh<br>' +
+                              '<b>MRN</b> : 93874<br>' +
+                              '<b>Date Of Birth</b> : 17-06-2004<br>' +
+                              '<b>Age</b> : 21<br>' +
+                              '<b>Gender</b> : M<br>' +
+                              '<b>Address</b> : NGP<br>' +
+                              '<b>Reg Date</b> : 23-12-2025<br>' +
+                              '<b>Status</b> : Nice' +
                               '</div>'
                     },
                     // Column 2
@@ -52,15 +52,16 @@ window.openEditorPopup = function() {
                         xtype: 'component',
                         flex: 1,
                         html: '<div style="line-height:1.8; font-family:Arial; font-size:12px;">' +
-                              'CT SCAN<br>' +
-                              'CYTOLOGY<br>' +
-                              'DIGITAL X-RAY<br>' +
-                              'FLUID EXAMINATION<br>' +
-                              'GASTROENTEROLOGY INVESTIGATION<br>' +
-                              'HAEMATOLOGY<br>' +
-                              'HARMONES<br>' +
-                              'HISTOPATHOLOGY' +
-                              '</div>'
+                            '<div style="font-size:15p; font-weight:bold;">Test done:</div>'+
+                            'CT SCAN<br>' +
+                            'CYTOLOGY<br>' +
+                            'DIGITAL X-RAY<br>' +
+                            'FLUID EXAMINATION<br>' +
+                            'GASTROENTEROLOGY INVESTIGATION<br>' +
+                            'HAEMATOLOGY<br>' +
+                            'HARMONES<br>' +
+                            'HISTOPATHOLOGY' +
+                            '</div>'
                     }
                 ]
             },
